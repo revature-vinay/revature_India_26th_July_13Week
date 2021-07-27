@@ -62,7 +62,36 @@ code.
 10)Using java you can develop multithreaded(parallel programming) apps.
 
 
+JVM
+------------
+-Java Virtual Machine. It provides virtualization, it is the core heart of Java which is responsible to run Java apps using interpreter.
+-JVM does the handshake with the Operationg system and creates the virtual environment which is required for the java apps to run smoothly.
+-It divides the meemory given by the operating system and utilizes it effectivly for managing the classes amnd objects in Java run time.
+- 2 popular memory is what we get to see here, STACK memory which is used as execution area and HEAP memory which is used as storage area. 
 
+
+Java Data Types(Primitives)
+----------------------------
+Java has 8 primitive data types and please please don remember that String is not.
+
+data_type		size(bytes)		default_Value
+--------------------------------------------------------------------------------------------
+byte			1				0
+short			2				0
+int			4				0
+long			8				0
+
+float			4				0.0000f (any float value in java should and must end with f)
+double			8				0.0000d (java takes any decimal values by default as double)
+
+char			2				'\u00000'(java supports uni-code character set)
+boolean			1 bit				false
+
+
+Primitive Type Casting(Conversion of one type to another)
+---------------------------------------------------------------------
+1)Implicit Casting -> Smaller size type is assigned to larger size type, which is taken care by compiler itself.
+2)Expilict Casting -> Larger to smaller which is explicitly done by developer
 
 
 OOC
