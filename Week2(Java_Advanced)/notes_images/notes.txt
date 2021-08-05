@@ -1,0 +1,69 @@
+Lambda Expression
+=================
+* The concept of Lambda Expression is first introduced in LISP programming
+* New feature introduced in Java 8
+* Lambda expression helps to define a function in a simpler syntax
+* In Lambda Expression the function name is not defined
+* Lambda Expression Syntax
+  (parameter_list) -> {function body}
+* Access modifier removed
+* Return type not defined
+* Method name not defined
+* If the body has a single line with return statement, then return keyword is not required.
+* Lambda expression helps to pass a function itself as a parameter
+* Java is a strongly typed language. Before Java 8 there is no possibility to pass a function as parameter.
+* With Lambda Expression there is a need to define the function passed as parameter as a type. This possibility is achieved in using Functional Interface.
+* A Functional Interface is an interface that has a Single Abstract Method (SAM).
+* Functional Interface helps to define the function type.
+
+Built-in Functional Interfaces
+==============================
+Consumer - One argument no return -             void accept(T t);
+Supplier - No argument and a return -           T get();
+Predicate - One argument and a boolean return - boolean test(T t);
+Function - One argument and a return -          R apply(T t);
+
+Method Reference
+================
+* Method Reference is a short-hand notation of lambda expression.
+For example, this lambda expression,
+
+str -> System.out.println(str)
+
+can be shortened as,
+
+System.out::println
+
+Stream API
+==========
+* All the classes and interfaces of this API is in the java.util.stream package
+* A stream is a sequence of objects that can be processed to obtain desired result
+* Stream is not a data structure
+* Stream takes input from Collections, Maps and Arrays to process the data
+* Streams don't change the original data when processing
+* Stream operations can be classified as
+  * Intermediate Operations
+    * map() - returns a stream based on a function
+    * filter() - returns a stream based on a condition
+    * sorted() - returns a sorted stream
+  * Terminal Operations
+    * collect() - collect the items in the stream and provide a list or set
+    * forEach() - helps to iterate through each element in the stream
+    * reduce() - helps to convert stream elements into a single value. (example: sum, min, max)
+
+Testing
+=======
+* Refers to testing an application on whether it is working as expected.
+* Testing can be classified as Unit Testing and Integration Testing.
+* Unit Testing helps to test individual components. (Real world example: Checking if brake works in a cycle)
+* Integration Testing helps to do end to end testing. (Real world example: Riding a cycle and checking if the drive is smooth)
+
+JUnit
+=====
+* Simple framework to write repeatable tests.
+* Unit Testing framework for Java programming language.
+* JUnit is an open source framework.
+* JUnit can be run automatically and report the test results.
+* A Test Case checks for a specific functionality of a method.
+* A Test is done by comparing an expected value and actual value.
+* Assert methods in JUnit helps to check the expected value and actual value.
