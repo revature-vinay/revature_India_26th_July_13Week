@@ -67,3 +67,89 @@ JUnit
 * A Test Case checks for a specific functionality of a method.
 * A Test is done by comparing an expected value and actual value.
 * Assert methods in JUnit helps to check the expected value and actual value.
+
+Design Patterns
+===============
+* Repeatable solution to a commonly occuring problem in software design
+* A design patterns is a description or template to solve problems in different situations
+* Design Patterns can speed up the development
+* Design Patterns solve subtle issues that can cause major problems later
+* There numerous Design Patterns available and can be broadly classified under these three categories:
+  * Creational
+  * Structural
+  * Behavioural
+* We will learn about Singleton and Factory pattern under Creational Patterns category.
+
+Creational Pattern - Singleton
+==============================
+* Ensures that a class has only one instance
+* Used in applications which need one and only instance of an object
+* Steps to create a Singleton:
+  * Declare the instance as private static member
+  * Make the constructor as private
+  * Provide a public static function that constructs the object when invoked the first time
+
+Creational Pattern - Factory
+============================
+* Define an interface or abstract class for creating an object, but let the subclass decide which class to instantiate.
+* Promotes loose-coupling by eliminating the need to directly interact with the subclass.
+* Steps to implement Factory pattern:
+  * Define an abstract class or interface
+  * Define multiple child classes
+  * Define a Factory class that creates the child class and returns the parent class reference.
+  * Creation of child classes should happen only through the factory method.
+
+Packaging Java Application
+==========================
+* Java class files can be packaged into a JAR (Java Archive) file.
+* The JAR file is a library and can be reused in various projects.
+* A JAR file can be created using 'jar' command.
+
+Logging
+=======
+* Logging helps to manage the application when it is live.
+* There are numerous logging frameworks available in Java
+  * Log4j
+  * Java Logging API (comes with JDK)
+  * tinylog
+  * Logback
+  * Apache Commons Logging
+  * SLF4J
+* Log4j is the commonly and widely used open source logging framework
+* SLF4J is a another framework that provides a wrapper around all logging frameworks
+* SLF4J logging levels - TRACE, DEBUG, INFO, WARN, ERROR
+  * TRACE - Logging granualar level of details
+  * DEBUG - Logs to debug an application
+  * WARN - Reports a aspects that could potentially lead to a problem
+  * ERROR - A significant problem that can impact running of the application or bad user experience
+* Key components for configuring a logging framework in our project:
+  Log Level - Definition of log level at which logging needs to happen
+  Appenders - It is possible to configure multiple appenders. Each appender 
+              represents logging a specific package or class to a specific file. 
+              Commonly used appenders are ConsoleAppender, FileAppender and RollingFileAppender.
+  Layout - Defines the pattern of the log (For example, it can include the date time stamp, thread details along with the log message)
+
+Maven
+=====
+* Maven is a software project management and comprehension tool.
+* Maven is based on Project Object Model (POM)
+* Maven can manage a project's build, reporting and documentation.
+* Makes the build process easy
+* Provides an uniform build system
+* Maven life cycle - validate, compile, test, package, verify, install, deploy
+  validate - validate correctness of project folder structure and files
+  compile - compile the project source code
+  test - run JUnit test cases
+  package - converts the code to a distributable format, such as JAR
+  verify - runs integrations tests
+  install - install the package into local repository
+  deploy - copies the final package to remote repository for sharing with other developers and projects
+* Maven project coordinates
+  - Coordinates help to identify a particular location on Earth
+  - Maven Project Coordinates help to identify a particular project
+  - Numerous companies have created numerous commonly used libraries
+  - As of 2021, there 22.7 Million JARs available in Maven repository
+  - The coordinates help identy the JAR we want based on Group Id, Artifact Id and Version
+    Group Id - Identifies the organization. (For example, if Google provides a jar, then Group Id will be "com.google")
+    Artifact Id - Name of the project.
+    Version - Contains the version of the project.
