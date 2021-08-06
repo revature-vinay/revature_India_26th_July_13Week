@@ -14,3 +14,7 @@ public class SynchMain {
 	}
 
 }
+
+//Task - 1) Explore on methods like wait,notify,notifyAll
+//       2) Explore on why wait,notify and notifyAll are in Object class not Thread class
+//       3) Explore and implement on Producer - Consumer Problem with Threads.
