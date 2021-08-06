@@ -114,12 +114,13 @@ Logging
   * tinylog
   * Logback
   * Apache Commons Logging
-  * SLF4J
+  * SLF4J - Simple Logging Facade for logging
 * Log4j is the commonly and widely used open source logging framework
 * SLF4J is a another framework that provides a wrapper around all logging frameworks
 * SLF4J logging levels - TRACE, DEBUG, INFO, WARN, ERROR
   * TRACE - Logging granualar level of details
   * DEBUG - Logs to debug an application
+  * INFO - Logs about high level information on the execution progress
   * WARN - Reports a aspects that could potentially lead to a problem
   * ERROR - A significant problem that can impact running of the application or bad user experience
 * Key components for configuring a logging framework in our project:
@@ -136,6 +137,15 @@ Maven
 * Maven can manage a project's build, reporting and documentation.
 * Makes the build process easy
 * Provides an uniform build system
+* Maven project coordinates
+  - Coordinates help to identify a particular location on Earth
+  - Maven Project Coordinates help to identify a particular project in maven repository
+  - Numerous companies have created numerous commonly used libraries
+  - As of 2021, there 22.7 Million JARs available in Maven repository
+  - The coordinates help identify the JAR we want based on Group Id, Artifact Id and Version
+    Group Id - Identifies the organization. (For example, if Google provides a jar, then Group Id will be "com.google")
+    Artifact Id - Name of the project.
+    Version - Contains the version of the project.
 * Maven life cycle - validate, compile, test, package, verify, install, deploy
   validate - validate correctness of project folder structure and files
   compile - compile the project source code
@@ -144,12 +154,3 @@ Maven
   verify - runs integrations tests
   install - install the package into local repository
   deploy - copies the final package to remote repository for sharing with other developers and projects
-* Maven project coordinates
-  - Coordinates help to identify a particular location on Earth
-  - Maven Project Coordinates help to identify a particular project
-  - Numerous companies have created numerous commonly used libraries
-  - As of 2021, there 22.7 Million JARs available in Maven repository
-  - The coordinates help identy the JAR we want based on Group Id, Artifact Id and Version
-    Group Id - Identifies the organization. (For example, if Google provides a jar, then Group Id will be "com.google")
-    Artifact Id - Name of the project.
-    Version - Contains the version of the project.
