@@ -57,6 +57,19 @@ case
 end [alias-name]
 from [table-name];
 
+alter table [table-name] drop column [column-name];
+
+// Implicit Join Notation
+select * from [table1], [table2], [table3] .... where [join-conditions];
+
+// Explicit Join Notation
+select * from [table1] 
+    inner join [table2] on [join-condition]
+    inner join [table3] on [join-condition]
+    inner join [table4] on [join-condition]
+    ...
+;
+
 alter table [table-name] add constraint [constraint-name] foreign key ([ref-column-name]) references [link-table-name](link-table-column-name);
 
 create table [table-name] (
@@ -66,4 +79,3 @@ create table [table-name] (
     primary key (id),
     constraint [constraint-name] foreign key ([this-table-column-name]) references [ref-table-name]([ref-table-column])
 );
-

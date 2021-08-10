@@ -1,0 +1,34 @@
+Theta Join
+==========
+Joining using comparison operators like <, >, <=, >=
+
+Transaction
+===========
+A Transaction is single logical unit of work that modifies data.
+
+ACID
+====
+In order to maintain consistency of data before and after transaction, ACID properties are followed.
+
+A - Atomicity
+C - Consistency
+I - Isolation
+D - Durability
+
+Atomicity - This means that the entire transaction takes place at once or doesn't happen at all.
+
+Consistency - Maintain data integrity. If there is a constraint violation, the transaction is rolled back.
+
+Isolation - Each transaction happens in a queue one by one. Multiple transactions can happen at a same time, if same row gets modified by multiple transaction, then one transaction waits for another transaction to complete.
+
+Durability - The changes made during the transaction lasts long.
+
+Read Phenomena
+==============
+Isolation levels define the degree to which a transaction must be isolated from data modification.
+
+Dirty Read - Does not get the data modified by another transaction.
+
+Non Repeatable Read - When a transaction reads a row twice, and get a different value each time.
+
+Phantom Read - Phantom Read occurs when two same queries retrieves two different set of results.
