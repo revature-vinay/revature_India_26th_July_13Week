@@ -79,3 +79,38 @@ create table [table-name] (
     primary key (id),
     constraint [constraint-name] foreign key ([this-table-column-name]) references [ref-table-name]([ref-table-column])
 );
+
+create view [view-name] as [select-query];
+
+Example Data Union
+==================
+create table fruit1(id int, name varchar(20));
+insert into fruit1 (id, name) values (1, 'Apple');
+insert into fruit1 (id, name) values (2, 'Orange');
+insert into fruit1 (id, name) values (3, 'Grapes');
+
+create table fruit2(fruit2_id int, fruit2_name varchar(20));
+insert into fruit2 (fruit2_id, fruit2_name) values (3, 'Grapes');
+insert into fruit2 (fruit2_id, fruit2_name) values (4, 'Mango');
+
+Index
+=====
+create unique index [index-name] on [table-name]([col-1], [col-2], ...);
+create index [index-name] on [table-name]([col-1], [col-2], ...);
+show index from [table-name];
+
+Stored Procedure
+================
+create procedure [procedure-name]([IN|OUT|INOUT] [parameter-name] [data-type], ...)
+begin
+   [statements]
+end
+
+Stored Function
+===============
+create function [function-name]([parameter-name] [data-type], ...) returns [data-type]
+[deterministic|non deterministic]
+[contains sql | no sql | reads sql data | modifies sql data]
+begin
+    [statements];
+end
