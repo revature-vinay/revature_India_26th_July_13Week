@@ -1,0 +1,322 @@
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - Welcome to Vinay's Player App V1.0
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - ==========================================
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:56:55 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:03 WARN  com.app.Main  - Invalid choice... Choice should be only number between 1-6 only 
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:03 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:06 WARN  com.app.Main  - Invalid choice... Choice should be only number between 1-6 only 
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:06 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:08 WARN  com.app.Main  - Invalid choice... Choice should be only number between 1-6 only 
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:08 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:10 WARN  com.app.Main  - Invalid choice... Choice should be only number between 1-6 only 
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:10 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:13 WARN  com.app.Main  - Invalid choice... Choice should be only number between 1-6 only 
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:13 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - Under Construction
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:18 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - Under Construction
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:20 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - Under Construction
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 11:57:23 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 11:57:27 INFO  com.app.Main  - Thanks for using this APP we will see you soon :) 
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - Welcome to Vinay's Player App V1.0
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - ==========================================
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 12:39:40 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:39:46 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:39:49 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 12:39:54 WARN  com.app.Main  - Player Id should be digit only... Try Again
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:39:54 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:40:09 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 12:40:16 WARN  com.app.Main  - Entered player id 1000 doesnt exist
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:40:16 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:40:31 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 12:40:36 WARN  com.app.Main  - Invalid Player Id -100
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:40:36 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:40:50 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - Player with id 100 found successfully... Below is the details
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - Player [id=100, name=Sachin, age=44, city=Mumbai, gender=M, sportsName=Cricket, contact=7777777777, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:40:52 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - Welcome to Vinay's Player App V1.0
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - ==========================================
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 12:55:30 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:55:34 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:55:39 INFO  com.app.Main  - Enter the TeamName to get the Players for that Team
+[main] 2021-08-13 12:55:43 WARN  com.app.Main  - No Players for team adasdas
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:55:43 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:56:11 INFO  com.app.Main  - Enter the TeamName to get the Players for that Team
+[main] 2021-08-13 12:56:19 WARN  com.app.Main  - Invalid team name : 3232223
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:56:19 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:56:40 INFO  com.app.Main  - Enter the TeamName to get the Players for that Team
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Total there are 6 number of players iplaying for the team INDIA printing the players
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=100, name=Sachin, age=44, city=Mumbai, gender=M, sportsName=Cricket, contact=7777777777, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=101, name=Ms Dhoni, age=35, city=Ranchi, gender=M, sportsName=Cricket, contact=6666666666, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=102, name=Sourav, age=45, city=Kolkata, gender=M, sportsName=Cricket, contact=2123456789, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=103, name=Sindhu, age=30, city=Hyderabad, gender=F, sportsName=Shuttle, contact=9123456789, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=104, name=Neeraj, age=32, city=Haryana, gender=M, sportsName=Athlete, contact=812345678, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Player [id=106, name=Karuna, age=44, city=Chennai, gender=F, sportsName=Athlete, contact=3213124567, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:56:46 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - Welcome to Vinay's Player App V1.0
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - ==========================================
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 
+What you wish to do today?
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 1)Create A Player
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 2)Update A Player
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 3)Delete A Player
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 4)List All Players
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 5)Search Player with various filters
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - 6)EXIT
+[main] 2021-08-13 12:58:45 INFO  com.app.Main  - Please enter your choice(1-6)
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:58:54 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 12:58:59 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - Player with id 101 found successfully... Below is the details
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - Player [id=101, name=Ms Dhoni, age=35, city=Ranchi, gender=M, sportsName=Cricket, contact=6666666666, team=Team [id=1, teamName=India]]
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 12:59:05 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 13:01:20 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 13:01:24 WARN  com.app.Main  - Invalid Player Id 10000
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 13:01:24 INFO  com.app.Main  - Please enter your choice(1-9)
+[main] 2021-08-13 13:03:07 INFO  com.app.Main  - Enter player id to get player details
+[main] 2021-08-13 13:03:11 WARN  com.app.Main  - Player Id should be digit only... Try Again
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 
+
+Welcome to Player Search Menu... Search Your Players By various Filters from below Menu option
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 1. By Player ID
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 2. By Player Name
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 3. By Player Age
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 4. By Player Gender
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 5. By Player City
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 6. By TeamName
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 7. By SportsName
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 8. By Player Contact
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - 9. Go back to Main Menu
+[main] 2021-08-13 13:03:11 INFO  com.app.Main  - Please enter your choice(1-9)
