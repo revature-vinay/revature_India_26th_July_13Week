@@ -1,0 +1,189 @@
+Heading
+=======
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+Paragraph
+=========
+<p>This is a paragraph.</p>
+
+Comment
+=======
+<!-- HTML comment -->
+
+Title
+=====
+<title>Page Title</title>
+
+Favicon
+=======
+<link rel="icon" href="images/favicon.ico">
+
+Image
+=====
+<img src="[link-to-image]">
+
+List
+====
+Unordered List
+==============
+<ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+</ul>
+Ordered List
+==============
+<ol>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+</ol>
+
+Table
+=====
+<table>
+    <tr>
+        <th>Column Heading 1</th>
+        <th>Column Heading 1</th>
+        <th>Column Heading 1</th>
+    </tr>
+    <tr>
+        <td>Row Data</td>
+        <td>Row Data</td>
+        <td>Row Data</td>
+    </tr>
+    <tr>
+        <td>Row Data</td>
+        <td>Row Data</td>
+        <td>Row Data</td>
+    </tr>
+</table>
+
+Form
+====
+<form method="post" action="[link]">
+</form>
+
+Link to test form submission: https://www.w3schools.com/action_page.php
+
+Input Text
+==========
+<input type="text" placeholder="[placeholder-text]" id="[id]" name="[name]" value="[value]" pattern="[regex-pattern]" title="[validation-message]">
+
+Regular Expression for Email: [a-z0-9._%+-]+@[a-z0-9.9.-]+\.[a-z]{2,}$
+
+Label
+=====
+<label for="[id-of-form-element]">[label]</label>
+
+Password
+========
+<input type="password" placeholder="[placeholder-text]" id="[id]" name="[name]" value="[value]" pattern="[regex-pattern]" title="[validation-message]">
+
+Selection List
+==============
+<select id="[id]" name="[name]">
+    <option id="[id]">[list-item]</option>
+    <option id="[id]">[list-item]</option>
+    <option id="[id]" selected>[list-item]</option>
+    <option id="[id]">[list-item]</option>
+    <option id="[id]">[list-item]</option>
+</select>
+
+Radio Button
+============
+<input type="radio" name="[radio-group-name]" value="[value-to-submit]" id="[id-to-link-label]" checked>
+
+Check Box
+=========
+<input type="checkbox" name="[name-to-submit]" id="[id-to-link-label]" checked>
+
+Text Area
+=========
+<textarea name="[name]" id="[id-to-link-label]">[text-area-content]</textarea>
+
+
+Cascading Style Sheets (CSS)
+============================
+
+Style definition syntax:
+========================
+[style-property-1]:[style-value-1];[style-property-2]:[style-value-2];
+
+Style Property - Predefined set of properties defined in the CSS specification.
+
+Inline Style Definition
+=======================
+<p style="[style-definition]"></p>
+
+
+Internal Style Definition
+=========================
+<head>
+    <style>
+        <!-- style definitions here -->
+    </style>
+</head>
+
+External Style Definition
+=========================
+Define style definition in a separate file.
+Link HTML with style definition file using the following definition in HTML.
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+Commonly used style properties
+==============================
+font-family - Define font.
+font-size - Define font size.
+background-color - Change background color of an element.
+color - Change font color.
+padding - Space around the html content.
+border - Include border around an element.
+margin - Include spacing around an element.
+
+Bootstrap
+=========
+Viewport
+========
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+CSS Inclusion
+=============
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+Scripts
+=======
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+container - Groups together a set of elements. A margin is added in the left and right hand side.
+
+container-fluid - Groups together a set of elements. No margins in the left and right hand side.
+
+alert alert-danger - For displaying information.
+
+badge badge-info - Displaying Badge.
+
+btn btn-primary - Style buttons.
+
+card:
+    <div class="card">
+        <img src="">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <div class="card-text">Sample Text.</div>
+        </div>
+    </div>
+
+https://images.unsplash.com/photo-1566454419290-57a64afe30ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80
+
+row - Define a series of elements.
+col - Define column spacing for an element.

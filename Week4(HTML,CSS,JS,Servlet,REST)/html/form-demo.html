@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Demo</title>
+    </head>
+    <body>
+        <h1>Form Demo</h1>
+        <form method="post" action="https://www.w3schools.com/action_page.php">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" value="John" required title="First Name is required.">
+            <br><br>
+            Email
+            <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.9.-]+\.[a-z]{2,}$">
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br><br>
+
+            <label for="teams">Select Team</label>
+            <select id="teams" name="teams">
+                <option>[-- Select a Team --]</option>
+                <option>Mumbai Indians</option>
+                <option selected>Chennai Super Kings</option>
+                <option>Royal Challengers Bengaluru</option>
+                <option>Delhi Daredevils</option>
+            </select>
+            <br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="M" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" value="F" id="female" checked><label for="female">Female</label>
+            <br><br>
+
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="reading" name="reading"><label for="reading">Book Reading</label>
+            <input type="checkbox" id="movies" name="movies"><label for="movies">Watch Movies</label>
+            <input type="checkbox" id="singing" name="singing"><label for="singing">Singing</label>
+            <br><br>
+            <select multiple name="hobbies-multiple">
+                <option>Book Reading</option>
+                <option>Watch Movies</option>
+                <option>Singing</option>
+            </select>
+            <br><br>
+
+            <label for="about">About Me</label><br>
+            <textarea id="about" name="about">This is some description about me</textarea>
+            <br><br>
+
+            <input type="submit" value="Save Data">
+        </form>
+    </body>
+</html>
