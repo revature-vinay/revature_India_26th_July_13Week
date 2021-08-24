@@ -1,0 +1,20 @@
+/* --- External CSS --- */
+/*a {
+    text-decoration: none;
+    background-color: darkmagenta;
+    color:white;
+    padding: 20px;
+    border: 2px solid yellow
+}*/
+
+.nav-item {
+    text-decoration: none;
+    background-color: darkviolet;
+    color:white;
+    padding: 20px;
+    border: 2px solid yellow
+}
+
+#page-heading {
+    color: blue;
+}

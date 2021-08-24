@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects - JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // Gender gender = new Gender("M", "Male");
+            var male = {
+                code: "M",
+                name: "Male"
+            };
+            var female = {
+                code: "F",
+                name: "Female"
+            };
+            console.log(male);
+            console.log(male.code);
+            console.log(female.name);
+
+            var emp1 = {
+                firstName: "John",
+                lastName: "Smith",
+                salary: 5000,
+                gender: male
+            };
+            console.log(emp1.firstName);
+            console.log(emp1.gender.name);
+
+            var emp2 = {
+                firstName: "Stella",
+                lastName: "Smith",
+                salary: 5000,
+                gender: {
+                    code: "F",
+                    name: "Female"
+                }
+            };
+            console.log(emp2.gender.name);
+
+            var employees = [emp1, emp2];
+            console.log(employees[1].lastName);
+
+            var employees1 = [
+                {
+                    name: "John",
+                    salary: 2000
+                },
+                {
+                    name: "Smith",
+                    salary: 5000
+                }
+            ];
+        </script>
+    </body>
+</html>

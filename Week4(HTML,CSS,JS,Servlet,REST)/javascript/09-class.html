@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class - JavaScript</title>
+    </head>
+    <body>
+        
+        <script>
+            class Gender {
+                constructor(code, name) {
+                    this.code = code;
+                    this.name = name;
+                }
+
+                display() {
+                    console.log(this.code + " : " + this.name);
+                }
+            }
+            var gender = new Gender('M', 'Male');
+            gender.display();
+        </script>
+    </body>
+</html>
