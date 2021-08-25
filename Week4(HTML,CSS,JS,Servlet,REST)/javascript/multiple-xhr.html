@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let xhrUser = new XMLHttpRequest();
+            xhrUser.open("GET", "https://api.github.com/search/users?q=jjchandru");
+            xhrUser.send();
+            xhrUser.addEventListener("readystatechange", function() {
+                if (xhrUser.readyState == 4) {
+                    var data = JSON.parse(xhrUser.responseText);
+                    var repoUrl = data.items[0].repos_url;
+                    let xhrRepos = new XMLHttpRequest();
+                    console.log("User Repository Link: " + repoUrl);
+                    xhrRepos.open("GET", repoUrl);
+                    xhrRepos.send();
+                    xhrRepos.addEventListener("readystatechange", function() {
+                        if (xhrRepos.readyState == 4) {
+                            console.log("Repositories");
+                            var repos = JSON.parse(xhrRepos.responseText);
+                            for (var i = 0; i < repos.length; i++) {
+                                console.log((i + 1) + ") " + repos[i].name);
+                                let xhrCommit = new XMLHttpRequest();
+                                xhrCommit.open("GET", repos[i].commits_url.substring(0, repos[i].commits_url.length - 6));
+                                xhrCommit.send();
+                                xhrCommit.addEventListener("readystatechange", function() {
+                                    if (xhrCommit.readyState == 4) {
+                                        var commits = JSON.parse(xhrCommit.responseText);
+                                        for (var i = 0; i < commits.length; i++) {
+                                            console.log(commits[i].commit.author.date + " - " + commits[i].commit.message);
+                                        }
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

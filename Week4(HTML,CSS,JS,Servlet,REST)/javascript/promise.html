@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise</title>
+    </head>
+    <body>
+        <script>
+            async function callPromise() {
+                console.log("Before timeout.");
+
+                let promise = new Promise(function(resolve, reject) {
+                    setTimeout(function () {
+                        //return reject("error");
+                        return resolve("data");
+                    }, 2000);
+                });
+
+                /*promise.then(
+                    result => {
+                        console.log("Inside result");
+                        console.log(result)
+                    },
+                    error => {
+                        console.log("Inside error");
+                        console.log(error);
+                    }
+                );*/
+                let promiseResponse = await promise;
+                console.log(promiseResponse);
+            }
+            callPromise();
+        </script>
+    </body>
+</html>

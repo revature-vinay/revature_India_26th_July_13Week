@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            async function showGitRepoCommits(user) {
+                let userReponse = await fetch("https://api.github.com/search/users?q=" + user);
+                let userData = await userReponse.json();
+                
+                let repoResponse = await fetch(userData.items[0].repos_url);
+                let repoData = await repoResponse.json();
+                for (var i = 0; i < repoData.length; i++) {
+                    console.log((i + 1) + ") " + repoData[i].name);
+                    try {
+                        let commitsReponse = await fetch(repoData[i].commits_url.substring(0, repoData[i].commits_url.length - 6));
+                        let commitsData = await commitsReponse.json();
+                        for (let commit of commitsData) {
+                           console.log("   " + commit.commit.author.date + " - " + commit.commit.message);
+                        }
+                    } catch (err) {
+
+                    }
+                }
+            }
+
+            showGitRepoCommits("jjchandru");
+        </script>
+    </body>
+</html>
