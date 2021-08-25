@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click using attribute</title>
+</head>
+<body>
+    <input type="text" id="name">
+
+    <script>
+        var firstName = document.getElementById("name");
+        firstName.addEventListener("keyup", displayText);
+
+        function displayText() {
+            console.log(firstName.value);
+        }
+    </script>
+</body>
+</html>

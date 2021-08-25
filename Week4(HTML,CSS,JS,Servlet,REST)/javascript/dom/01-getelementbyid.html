@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting element by ID - DOM</title>
+    </head>
+    <body>
+        <p id="para">This is a paragraph.</p>
+        <script>
+            var paragraph = document.getElementById("para");
+            console.log(paragraph);
+            console.log(paragraph.innerText);
+            paragraph.innerText = "This is a <a href='#'>paragraph</a>.";
+        </script>
+    </body>
+</html>

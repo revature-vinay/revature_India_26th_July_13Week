@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click using attribute</title>
+</head>
+<body>
+    <input type="button" value="Search" id="search">
+
+    <script>
+        var search = document.getElementById("search");
+        search.addEventListener("click", displayClick);
+
+        function displayClick() {
+            console.log('click');
+        }
+    </script>
+</body>
+</html>

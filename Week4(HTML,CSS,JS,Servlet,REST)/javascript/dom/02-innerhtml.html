@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inner HTML - DOM</title>
+    </head>
+    <body>
+        <p id="para">This is a paragraph.</p>
+        <script>
+            var paragraph = document.getElementById("para");
+            console.log(paragraph.innerHTML);
+            paragraph.innerHTML = "This is a <a href='#'>paragraph</a>.";
+        </script>
+    </body>
+</html>

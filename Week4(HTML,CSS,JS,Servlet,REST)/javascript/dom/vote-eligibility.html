@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote Eligibility Checker</title>
+</head>
+<body>
+    <h1>Vote Eligibility Checker</h1>
+    Age: <input type="text" id="age">
+    <div id="message"></div>
+
+    <script>
+        var age = document.getElementById("age");
+        var message = document.getElementById("message");
+        age.addEventListener("keyup", displayText);
+
+        function displayText() {
+            if (isNaN(age.value)) {
+                message.innerText = "Enter a valid number.";
+            } if (age.value == "") {
+                message.innerText = "";
+            } else if (age.value >= 18) {
+                message.innerText = "Eligible to vote.";
+            } else if (age.value < 18) {
+                message.innerText = "NOT eligible to vote.";
+            }
+        }
+    </script>
+</body>
+</html>
