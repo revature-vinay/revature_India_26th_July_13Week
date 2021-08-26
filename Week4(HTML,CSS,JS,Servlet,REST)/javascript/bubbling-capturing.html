@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="border: 2px solid red; padding: 1rem" id="outerDiv">
+            OUTER DIV
+            <div style="border: 2px solid red; padding: 1rem" id="innerDiv">INNER DIV</div>
+        </div>
+        <script>
+            var inner = document.getElementById("innerDiv");
+            inner.addEventListener("click", e => console.log("CAPTURE: " + e.currentTarget.id), true);
+            inner.addEventListener("click", e => console.log("BUBBLE:  " + e.currentTarget.id));
+            var outer = document.getElementById("outerDiv");
+            outer.addEventListener("click", e => console.log("CAPTURE: " + e.currentTarget.id), true);
+            outer.addEventListener("click", e => console.log("BUBBLE:  " + e.currentTarget.id));
+        </script>
+    </body>
+</html>
