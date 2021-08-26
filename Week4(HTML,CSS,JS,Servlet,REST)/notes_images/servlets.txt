@@ -1,0 +1,117 @@
+Servlets(JEE)
+----------------------------------------------
+->Servlet is a server side scripting tool.
+->capable of handling incoming request and generate appropriate response
+->written using java, we still write all the code in .java file itself.
+->Servlets handle the request and responses in multithreaded way which makes it lighter than traditional CGI.
+
+
+
+Servlet's run on Life cycle
+------------------------------------------
+1)void init(ServletConfig)
+-this is the first phase of Servlet life cycle where the object of the Servlet Class is created/initialized when the request comes in
+and its been put in actively in the server to handle all the requests coming in. ServletConfig is a interface where 
+we pass any custom configuration related to Servlet. This lifecycle stage will be executed only and only once.
+
+
+2)void service(ServletRequest,ServletResponse)
+-this is the 2nd stage of lifecycle of servlet where we write the code of what exactly this servlet should do, you write the logic
+of handling incoming request and you will generate approriate responses here, this lifecycle will be executed for number of requests made.
+-ServletRequest is where the request objects or data come to the application which is input to servlet/service layer of servlet.
+-ServletResponse is where when if servlet or service wants communicate back to the client.
+
+
+3)void destroy()
+-when there is no active request/thread on the particular servlet, the servlet will be taken off from the main memory, thats when the destroy is invoked.
+this stage of lifecylce will be executed only and only once.
+
+
+web.xml file
+--------------------------
+This is popularly known as configuration file or deployment discriptor for any JEE apps. All the deployment and configuration details
+which will be used by the web server will be given here and the web server utilizes this file for all configuration details purpose.
+
+
+Checkout Servlet hierarchy diagram to understand types of servlets
+2 types of Servlets(GenericServlet->HttpServlet)
+->Both are Abstract classes , GenericServlet implements Servlet interface where all the life cycle methods are available.
+->GenericServlet is generic to any protocol.
+->HttpServlet is child of GenericServlet and it is also abstract class, additionally HttpServlet provides specific methods to handle the 
+	requests based on get,post,put,delete etc.
+->Note that if the service method is there then none of the other methods are eligible to take the call, all requests(get,put,post or delete)
+will be routed to service only, and if service is not there that is when it will be routed to specific http methods for specific calls.
+
+
+
+
+
+NOTE : ALL URL/s in the WORLD by default are of GET request.
+
+From html forms or form tag we can only make GET and POST request.    Using Javascript on the front end we can make any http method call.
+
+
+ServletConfig and ServletContext
+---------------------------------------------------------------------------------------------------
+->ServletConfig is a configuration based parameters which can be passed to specific servlet only. 
+->The Configuration params set using ServletConfig for a particular servlet cannot be accessed by other Servlet.
+For eg: If Servlet1 has some config params which is been set using ServletConfig these params cannot be used in Servlet2, it is local to that Servlet only.
+->to set config params in the web.xml file within servlet tag we can use <init-param></init-param> tag and give the param name and param value as
+a key value pair and you can access those params inside that particular Servlet Class.
+
+
+->ServletContext is global to any servlets within this app, the context params set can be accessed by any Servlet throughtout the entire application.
+->We can set context params within web.xml file by using <context-param> tag within the <web-app> tag anywhere.
+
+RequestDispatcher API
+--------------------------------------------
+It provides below 2 methods
+1)forward(request,response) - forward will forward the current request and response to the specific url mentioned within the application itself
+				and will send the response of the forwarded page only and nothing else apart from it.
+2)include(request,response) - include will include the response of current page and also the response of the page given in the url of include both
+				together as one response will be sent to the browser.
+In both the cases the URL wont change it will be the URL of that particular servlet where this code is written.
+
+
+response.sendRedirect("url") vs forward
+--------------------------------------------------
+->sendRedirect changes the URL and creates new request, forward keeps existing request alive.
+->forward only within the application, sendRedirect we can even navigate outside the application.
+
+
+http/https is a stateless protocol -> it doesnt carry any info from any page to multiple pages, its light weight and its faster due to this reason.
+
+To manage the state, there are 4 different techniques, using this we can convert http from stateless to statefull
+------------------------------------------------------------------------------------------------------------------------
+1)Hidden Form Fields.
+2)URL Rewriting
+3)Cookies
+4)Using HttpSession
+
+
+Servlets provide 3 types of Scopes
+--------------------------------------------------
+1)ServletRequest  - request scope - this is active until the current URL is not changed.
+2)ServletContext - application scope - this is active until the entire application's destroy is invoked.
+3)HttpSession   -  session scope  - this is per session per user, its between user login to logout
+
+
+
+
+
+http/https methods
+---------------------------
+->GET(default) - Used for reading resource from server. Passes the data via the URL i.e it appends the data at the end of the url.
+->POST       - Used for creating a resource, it is secured comparable to get because it passes the data via the payload not the URL.
+->PUT     - used for updating the resource completely and it is idempotent in nature, passes the data via the payload.
+->PATCH   - used for partial update, sends data via the payload.
+->DELETE    - used for deleting the resource from backend, sends data via the url similar to GET.
+
+
+
+
+
+
+
+
+
