@@ -1,0 +1,134 @@
+Hibernate(Gavin King)
+-------------------------
+- It is DB based framework
+- It provides improvistation to JDBC
+- Written using JAVA
+- Free or Open Source F/w provided and maintained by Red Hat.
+- Popularly known as ORM(Object Relational Mapping)SQL and OGM(Object Graph Mapping)NOSQL F/w
+- Hibernate provides HQL(Hibernate Query Language) and HCQL(Hibernate Criteria Query Language) which is DB independent. 
+- To provide the flexibility hibernate provides something called as NATIVE QUERIES, using which we can write queries which are specific to particular DB vendor and also can make stored procedure calls using this.
+
+
+- In Hibernate we write all the configuration related to DB in a file called as hibernate.cfg.xml
+- configurations like datasource(driver,url,username,password), connection pool, cache, java classes(persistent objects) and any other
+ meta information which you want to pas it to hibernate we can use this hibernate.cfg.xml file.
+
+- In hibernate the version below 3.0 we used to you .hbm.xml file hbm referes to hibernate mapping.  If we have Employee as our persistent object
+ any configuration related to this Employee object like PK,FK,Coloumn Constraints, and any other relationship configuration we like to give
+we used to write Employee.hbm.xml file where all these congiuration related to Employee class used to go in and this file will be
+added as configuration reference for hibernate within hibernate.cfg.xml file.
+
+- After or from hibernate3.0 it brought in annoation support, i.e for eg any configuration for a Employee class which we want to give, we can
+utilize JPA(Java Persistence API) annotations and provide the configuration of PK,FK,UK and any configuration and add this class as a reference in
+hibernate.cfg.xml file and hibernate will take care from there.
+
+
+Some of the Hibernate Core Interfaces and classes
+-----------------------------------------------------------------------------------
+1)Configuration - Configuration class helps to identify and load the hibernate configuations(hibernate.cfg.xml) int to the runtime environment of java.
+2)StandardServiceRegistryBuilder - this class applies Builder design pattern, and takes the configurations loaded by Configuration object and builds
+			all the configuration which is part of hibernate.cfg.xml, once successfully executed this will generate SessionFactory object.
+3)SessionFactory - this is a factory object, using which we can create various sessions to interact with the DB.
+4)Session - we create sessions to perform CRUD operations on the DB with the help of SessionFactory object.
+		Remember all the operations with Session object to the DB is only and only based on or dependent on primary key.
+5)Transaction - We can open a Transaction per session and perform all the operations and can commit or rollback.
+6)Query - Query API is HQL(Hibernate Query Language) which overcomes the limitation of Session object, we can write any Queries to the DB which is 
+		dependent or not dependent on the primary key coloumn and it is DB independent. Only the insert query is not supported here because
+		Session object covers that.
+7)Criteria - Criteria and Restrictions API is HCQL(Hibernate Criteria Query Language) is Object Oreiented way of applying various Restrictions to the data
+		fetched by the Hibernate, intead writing the Query using HQL, we can also apply restrictions using HCQL purely object oriented style.
+
+
+Hibernate internally uses these
+------------------------------------
+1)JTA - Java Transaction API for managing the Transactions, the Transaction object defined above utilizes JTA.
+2)JDBC - Hibernate utilizes type4 JDBC driver internally to interact with DB.
+3)JNDI - Java Naming Directory Interface -  this is where hibernate utilizes to apply reflection from java objects to db tables and vice versa.
+
+
+QUICK NOTE : Performance wise JDBC is faster than Hibernate, reason in JDBC we directly pass the query to execute, but in Hibernate we pass Objects which will
+		internally be converted to the Queries and the execute. So the conversion time is a gap between JDBC and Hibernate.
+		In Hibernate it reflects complete class to the table and vice versa where as in JDBC we can only select what we need and ignore the rest.
+
+
+Sample hibernate configuration(hibernate.cfg.xml)
+----------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/revature_mass_india</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+        <property name="hbm2ddl.auto">create</property>
+        
+        <!--  
+        you will be giving Model/POJO/Persistance class entry also here
+        other DB configuration like connection pool, cache memory etc can also be given here  
+        -->
+       <mapping class="com.demo.model.Player"/>
+       
+    </session-factory>
+</hibernate-configuration>
+
+1) <hibernate-configuration> this is root for all the session factory
+2)<session-factory> we provide configuration for a factory object
+3) <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/revature_mass_india</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+this is a data source configuration above is the example for MYSQL Db it changes with which DB vendor you are interacting with
+4)<property name="hibernate.dialect">  we given dialect configuration to understnad the version changes for the particular DB provider and adjust configuration accordingly.
+5)<property name="hbm2ddl.auto"> (hbm2ddl) -> hibernate mapping to data defination language
+	- create - this option drops the existing tables if any and creates the table and it will be available even after factory has closed.
+	- create-drop - this option drops the tables and creates it at the start of session factory and once factory is closed it drops again.
+	- update - this option will not create or drop any tables, it will just keep updating the data, this is what we will be using in our production.
+6) <property name="show_sql"> - prints the sql query generated by hibernate on the console
+7)<property name="format_sql">true</property> - formats the query for readable purpose.
+
+8)<mapping class="com.demo.model.Player"/>  - this is the persitatnt object which hibernate understands the configuration written within it and maps accordingly to the tables .
+
+1-5 is mandatory remaining is optional.
+
+
+Different States of an Object In Hibernate(3 states)
+---------------------------------------------------------
+1)Transient State - > where your POJO object is created using the new keyword and you would've added data in it but there is no record in the
+			backend table associated with that object.
+An object that is created for the first time using the new() operator is in transient state. When the object is in transient state 
+then it will not contain any identifier (primary key value). 
+You have to use save, persist or saveOrUpdate methods to persist the transient object.
+save() vs persist() -> 
+-save()(eager) will first assign the generated identifier and also looks for if any cascade rules(save-update) is been provided. also returns the generated ID.
+-persist()(lazy) will pull the object from transient state to persistent state and will not return anything.cascade(persist).
+
+
+2)Persistent State -> This is the state where the POJO object is now associated with hibernate's session and where a record for this now will be there in DB.
+
+3)Detached State -> when you close the hibernate session, so after that whatever changes you are making to your POJO object will not be reflected in the DB.
+		you have a record of this in DB but since session is closed it is detached from the session.
+
+load vs get -> get is eager and fetches data from table based on id, if not found it will return null
+		load is lazy and fetches data from db or cache, if not found it will throw error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
