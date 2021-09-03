@@ -121,6 +121,48 @@ load vs get -> get is eager and fetches data from table based on id, if not foun
 
 
 
+Association Mappings
+------------------------------------
+In hibernate since the ORM is mapping the relationships which are associated from Java classes to the DB tables we get Association Mappings
+as a annotations in hibernate, which we can use and configure our POJO classes with these annotations and hibernate will do the maapping as given.
+4 types of association mapping
+1)@OneToOne   - IS EAGER By Default
+2)@OneToMany  - IS LAZY By Default
+3)@ManyToOne  - IS EAGER By Default
+4)@ManyToMany - IS LAZY By Default.
+
+In Hibernate we get 2 types of FETCH Startegies. LAZY and EAGER startegy.  Any default startegies of associations can be modified.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

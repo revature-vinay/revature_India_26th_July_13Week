@@ -48,7 +48,8 @@ public class Main {
 //		System.out.println(s2);
 		
 		
-		Query query=session.createQuery("from com.app.model.Student order by age");
+		Query query=session.createQuery("from com.app.model.Student where city=:city order by age");  //select,update,delete
+		query.setString("city", "Mumbai");
 		List<Student> studentList=query.list();
 		for(Student s:studentList) {
 			System.out.println(s);
