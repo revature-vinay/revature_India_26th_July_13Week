@@ -1,0 +1,44 @@
+<div class="container-fluid">
+
+    <!-- Id: {{player.id}} <br />
+    Name :{{player.name}} <br />
+    <img class="img-thumbnail" [src]="player.avatar" alt=""> -->
+    <h3 *ngIf="flag">Player Details</h3>
+    <table *ngIf="flag" class="table table-light">
+
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Coutry</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of playerList">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.country}}</td>
+                <td><img class="img-thumbnail" [src]="p.avatar"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div class="container">
+    <h2>Enter Player Details Below</h2>
+    <label>Enter ID</label>
+    <input class="form-control" type="text" [(ngModel)]="player.id">
+    <label>Enter Name</label>
+    <input class="form-control" type="text" [(ngModel)]="player.name">
+    <label>Enter Country</label>
+    <input class="form-control" type="text" [(ngModel)]="player.country">
+    <label>Player Image URL</label>
+    <input class="form-control" type="text" [(ngModel)]="player.avatar">
+    <button class="btn btn-primary" type="button" (click)="addPlayer()">Save Player</button>
+</div>
+
+<div *ngIf="flag" class="container-fluid">
+    <button class="btn btn-danger" type="button" (click)="removeLastPlayer()">Remove Last Player</button>
+</div>
