@@ -8,4 +8,16 @@
   <p>Currency Pipe : {{price | currency:'USD'}}</p>
   <p>Currency Pipe : {{price | currency:'EUR'}}</p>
   <p>Slice Pipe :{{fruits | slice:1:4}} </p>
+  <p>Date without Date pipe :{{currDate}} </p>
+  <p>Date with Date pipe :{{currDate |date}} </p>
+  <p>Date with Date pipe with formatting :{{currDate |date:'dd - MMM - yyyy EEEE HH:mm:ss'}} </p>
+  <p>Percentage Pipe : {{num | percent:'2.2'}}</p>
+  <p>JSON object without JSON pipe : {{myjson}}</p>
+  <p>JSON object with JSON pipe : {{myjson | json}}</p>
+</div>
+
+<div>
+  <h1>Custome Pipe Demo</h1>
+
+  <p>Fullname Custome Pipe demo {{firstName | fullname:lastName}}</p>
 </div>

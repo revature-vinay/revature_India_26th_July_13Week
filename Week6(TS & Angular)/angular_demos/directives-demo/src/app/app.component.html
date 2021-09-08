@@ -1,0 +1,9 @@
+<div>
+  <h1 appCustom>Directives Demo</h1>
+  <p *ngFor="let player of players" [ngClass]="{
+    'highlight':player.id===103
+  }" [ngStyle]="{'font-size':'30px'}">
+    Id : {{player.id}}
+    Name : {{player.name}}
+  </p>
+</div>
