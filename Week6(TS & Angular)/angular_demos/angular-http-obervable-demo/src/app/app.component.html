@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h1 class="display-4">HttpClient & HttplClientModule with Observables Demo</h1>
+  <p class="lead">Making a http call to GITHUB API : https://api.github.com/users</p>
+  <hr class="my-4">
+
+</div>
+<div class="container">
+  <button class="btn btn-primary" type="button" (click)="getAllGitUsers()">Get All GIT USers</button>
+</div>
+
+<div *ngIf="flag" class="container-fluid">
+  <h1>All GIT Users List</h1>
+  <div *ngFor="let user of usersList" class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{user.login}}</h5>
+      <p class="card-text">{{user.id}}</p>
+      <p class="card-text">{{user.url}}</p>
+    </div>
+    <img class="card-img-bottom" [src]="user.avatar_url" [alt]="user.login" style="width: 150px; height: 150px;">
+  </div>
+</div>
