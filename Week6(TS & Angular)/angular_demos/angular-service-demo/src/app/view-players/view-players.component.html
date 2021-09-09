@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <h3 *ngIf="flag">Player Details</h3>
+    <h3 *ngIf="!flag">No Players To Display As Of Now</h3>
+    <table *ngIf="flag" class="table table-light">
+
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Coutry</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of playerList">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.country}}</td>
+                <td><img class="img-thumbnail" [src]="p.avatar"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

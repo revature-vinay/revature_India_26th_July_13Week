@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Enter Player Details Below</h2>
+    <label>Enter ID</label>
+    <input class="form-control" type="text" [(ngModel)]="player.id">
+    <label>Enter Name</label>
+    <input class="form-control" type="text" [(ngModel)]="player.name">
+    <label>Enter Country</label>
+    <input class="form-control" type="text" [(ngModel)]="player.country">
+    <label>Player Image URL</label>
+    <input class="form-control" type="text" [(ngModel)]="player.avatar">
+    <button class="btn btn-primary" type="button" (click)="addPlayer()">Save Player</button>
+</div>
