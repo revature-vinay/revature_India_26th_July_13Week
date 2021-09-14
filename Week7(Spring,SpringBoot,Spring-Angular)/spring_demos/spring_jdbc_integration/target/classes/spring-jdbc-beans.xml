@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/revature_mass_india"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+
+	<bean id="playerDAO" class="com.app.dao.impl.PlayerDAOImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+</beans>
