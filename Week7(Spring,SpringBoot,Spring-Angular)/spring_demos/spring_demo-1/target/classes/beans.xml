@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h1" class="com.app.model.Hello" scope="prototype">
+		<property name="message"
+			value="Hello and Welcome to Spring DI using IOC with setter injection(SI)"></property>
+	</bean>
+<!-- <property> refers to setter injection
+<constructor-arg> refers to constructor injection
+ -->
+ <bean id="h2" class="com.app.model.Hello" lazy-init="true">
+		<constructor-arg name="message" value="Hello and Welcome to Spring DI using IOC with constructor injection(CI)"></constructor-arg>
+	</bean>
+</beans>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="a1" class="com.app.model.Address">
+		<property name="aid" value="90001"></property>
+		<property name="street" value="some street"></property>
+		<property name="city" value="Mumbai"></property>
+	</bean>
+
+	<bean id="a2" class="com.app.model.Address">
+		<property name="aid" value="70001"></property>
+		<property name="street" value="some street"></property>
+		<property name="city" value="Kolkata"></property>
+	</bean>
+	<bean id="t1" class="com.app.model.Team">
+		<property name="teamId" value="90901"></property>
+		<property name="teamName" value="INDIA"></property>
+		<property name="coachName" value="Ravi Shastri"></property>
+	</bean>
+	<bean id="t2" class="com.app.model.Team">
+		<property name="teamId" value="90902"></property>
+		<property name="teamName" value="Mumbai Indians"></property>
+		<property name="coachName" value="Anil Kumble"></property>
+	</bean>
+	<bean id="t3" class="com.app.model.Team">
+		<property name="teamId" value="90903"></property>
+		<property name="teamName" value="Mumbai League West"></property>
+		<property name="coachName" value="Javed"></property>
+	</bean>
+	<bean id="t4" class="com.app.model.Team">
+		<property name="teamId" value="90904"></property>
+		<property name="teamName" value="Mumbai League East"></property>
+		<property name="coachName" value="Gayakwad"></property>
+	</bean>
+	<bean id="t5" class="com.app.model.Team">
+		<property name="teamId" value="90905"></property>
+		<property name="teamName" value="Kolkata Knight Riders"></property>
+		<property name="coachName" value="Brandon Macculum"></property>
+	</bean>
+
+
+	<bean id="p1" class="com.app.model.Player">
+		<property name="name" value="Sachin R Tendulkar"></property>
+		<property name="id" value="100"></property>
+		<property name="age" value="42"></property>
+		<property name="address" ref="a1"></property>
+		<property name="teamList">
+			<list>
+				<ref bean="t1" />
+				<ref bean="t2" />
+				<ref bean="t3" />
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="p2" class="com.app.model.Player">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Saurav Ganguly"></constructor-arg>
+		<constructor-arg name="age" value="44"></constructor-arg>
+		<property name="address" ref="a2"></property>
+		<property name="teamList">
+			<list>
+				<ref bean="t1" />
+				<ref bean="t5" />
+
+			</list>
+		</property>
+	</bean>
+
+	<bean id="p3" class="com.app.model.Player">
+		<property name="name" value="Rohith Sharma"></property>
+		<property name="id" value="103"></property>
+		<property name="age" value="33"></property>
+		<property name="address" ref="a1"></property>
+		<property name="teamList">
+			<list>
+				<ref bean="t1" />
+				<ref bean="t2" />
+				<ref bean="t4" />
+			</list>
+		</property>
+	</bean>
+
+
+</beans>
