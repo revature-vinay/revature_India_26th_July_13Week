@@ -1,0 +1,43 @@
+Spring Annotations
+--------------------------
+1)@Configuration - Used to specify that this is a Configuration class where we have all the beans. Instead of beans.xml we can create
+		annotation based configuration using this annotation on any Java class.
+2)@Bean - its equivalent to <bean> tag whwich we use for setter or constructor injection.
+3)@Lazy - that bean will be loaded in lazy way
+4)@Autowired - used to autowire the beans, field injection.
+5)@Primary  - used for specifying if there are same bean objects for multiple classes, which is Primary out of them.
+6)@Qualifier - used for naming same as Bean name within bean tag to identify the bean.
+
+Spring AOP Annotations
+-----------------------------
+@PointCut
+@AspectJ
+@Around @After @AfterReturning @AfterThrowing @Before
+
+
+Spring Web-MVC Annotations
+--------------------------------------------
+Stereotype Annotations - refers to these annotations are thread safe and singleton.
+1)@Component -> any java class which you want to be considered as a Spring Bean we can annotate @Component above that.
+@Component is derived by 3 more stereotype annotations
+	a)@Controller - It acts as a Controller in WEB MVC.
+	b)@Service    - It acts as a Service layer in the app.
+	c)@Repository - It acts as a DAO layer in the app.
+
+Other Web MVC annotations
+2)@RestController - used for creating RESTful web services. this annotation is combination of @Controller + @ResponseBody
+	Quick Note :- Use @Controller if you are managing the presentation layer using jsp,jsf,thymeleaf or html within the same Spring Web MVC app
+			Use @RestController where the presentation layer or logic is been managed by the consumer of your RESTful services.
+3)@RequestBody - used to read the Payload which is coming in to the application via POST/PUT/PATCH methods.
+4)@ResponseBody - used to send the response back, we use it in case of @Controller.
+5)@RequestMapping - used to specificy the type of Http request either it is GET/PUT/POST/DELETE/PATCH/HEAD/TRACE/OPTIONS
+	@RequestMapping further classified to more specific annotation to identify the http method directly
+	a)For GET request use @GetMapping
+	b)For POST request use @PostMapping
+	c)For PUT request use @PutMapping
+	d)For PATCH request use @PatchMapping
+	e)For DELETE request use @DeleteMapping and same goes for other HTTP methods as well.
+6)@PathVariable - used for identifiying PathVariable which is part of your GET or DELETE request
+7)@ExceptionHandler - handling exceptions for particular methods.
+8)@ControllerAdvice - AOP to handle centralized exceptions for Spring WEB MVC
+9)@RequestParam - used to read the request parameters from the request.
