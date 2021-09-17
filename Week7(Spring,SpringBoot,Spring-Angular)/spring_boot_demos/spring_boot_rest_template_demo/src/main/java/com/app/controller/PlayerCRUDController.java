@@ -1,5 +1,7 @@
 package com.app.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -43,6 +45,10 @@ public class PlayerCRUDController {
 		// TODO Auto-generated method stub
 		service.deletePlayer(id);
 	}
-	
+	@GetMapping("/players")
+	public List<Player> getAllPlayers() {
+		// TODO Auto-generated method stub
+		return service.getAllPlayers();
+	}
 
 }
