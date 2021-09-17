@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="card" *ngFor="let player of players">
+        <img class="card-img-top" style="width: 200px; height: 200px;" [src]="player.avatar" alt="{{player.name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{player.name | uppercase}}</h5>
+            <p class="card-text">Age: {{player.age}}</p>
+            <p class="card-text">TeamName: {{player.teamName}}</p>
+            <p class="card-text">City: {{player.city}}</p>
+        </div>
+    </div>
+</div>
