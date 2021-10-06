@@ -1,0 +1,37 @@
+Intro to Docker Demo
+
+	1) Start up an EC2
+	2) SSH into launched EC2
+	3) Run command: `sudo yum update -y`
+	4) Run command: `sudo yum install docker -y`
+	5) Run command: `sudo service docker start`
+	6) Run command: `sudo usermod -a -G docker ec2-user`
+	7) Exit EC2 shell
+	8) SHH back into EC2
+	9) Run command: `docker info`
+	10) Run command: `docker run hello-world`
+	11) Run command: `docker image ls`
+	12) Run command: `docker container ls`
+	13) Run command: `docker container ls -a`
+	14) Run command: `docker rm <container-id>`
+	15) Run command: `docker rmi hello-world`sudo
+	16) Exit EC2 shell
+	17) SCP target JAR to home directory of the EC2
+	18) Create Dockerfile (see Addendum A)
+	19) Run command: `docker build -t discovery-service .`
+	20) Run command: `docker image ls`
+	21) Run command: `docker run -d -p 8761:8761 discovery-service`
+	22) Run command: `docker container ls`
+	23) Go to http://<EC2-DNS-URL>:8761/
+
+
+Addendum A: Dockerfile
+
+	1) Run command: `touch Dockerfile`
+	2) Run command: `vim Dockerfile`, add:
+		
+		FROM java:8
+		ADD ./discovery-service.jar .
+		EXPOSE 8761
+		CMD java -jar -Xmx512M discovery-service.jar
+

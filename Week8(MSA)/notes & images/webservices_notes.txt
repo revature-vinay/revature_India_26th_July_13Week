@@ -1,0 +1,294 @@
+Overview of web services:
+
+	Web services:
+		
+		What is a web service? 
+			Basiclly, a service that is offered over the web. Can include any type of software, application or cloud technology that may communicate
+			over a web protocol (HTTP) using a standard format (JSON, xml, etc.). It is a platform independent communication (Java, C#, etc.). One can 
+			think of it as a dependency.
+
+		Why not send over services via a jar file?
+			Update anomalies
+				What happens if I update my logic? I'll have to find the new version or I'll be stuck with an outdated version. 		
+			Platform dependence 
+				What to do, if I have c#?
+				What to do, if I have Oracle rather than Postgressql?
+			Service the data gives us will require DB access
+				Nobody wants to send their DB credentials...
+
+		Essential Aspects of a web service?
+			Available over the internet (or intranet networks)
+			Support client-server communication ( a messaging system, request and response), typically JSON or XML format 
+			Platform independent 
+			Self-describing: 
+			Discoverable
+
+		2 Common Types of Web Services:
+			REST - REpresentational State Transfer
+			SOAP - Simple Object Access Protocol 
+
+	SOA (Service Oriented Architecture):
+		Technique for building applications using loosely coupled services. In other words, an application that has one or more webservices that rely 
+		on it. 
+
+	Benefits of SOA: 		
+		Modular Business Services
+		Code Reuse 
+		Scalability 
+		Language Independent (each service can the optimal platform)
+	
+	With SOA and Webservices:
+		Standardized formats (XML, JSON, etc.)
+		Standardized transport (Http, TCP)
+		
+	HTTP review: request, response, status code, verbs 
+
+	HTTP:  
+		1) Client-Server model, server is responding to client request 
+		2) Is a stateless protocol 
+		3) Application layer protocol ( sitting on top of transport layer, TCP most of the time)
+		4) Http Include:
+			Client Actions (e.g. Http Method)
+			Server Status Code:
+				100 - Informational
+				200 - Success
+				300 - Redirect
+				400 - Client Side Error 
+				500 - Server Side Error
+			Headers: Allows you to send additional information with your request or response. They can be standard or non-standard, relating 
+				to Authentication, Caching, etc. 
+		5) Http is connectionless:
+			Client disconnects after sending the request, the server re-established the connection to deliver the response. 
+		6) Can deliver any sort of data, as long as both can read it. 
+
+	Http Request:
+		Request Line:
+			Method
+			URL (Universal Resource Locator) - Identifies the resource on the server
+			HTTP version number - shows which HTTP specification to which the client has tried to comply to.
+		Http Header:
+			Allows you to send additional information with your request or response. They can be standard or non-standard, relating 
+			to Authentication, Caching, etc. The information is made up of name: value pairs, e.g. Accept-Language: eng, fr
+		Http Body:
+			Is referred to as a message body, the entity body is the actual content of the message
+
+	Http Response:
+		Status line:
+			HTTP VERSION number - shows which HTTP specification to which the server has tried to comply to.
+			Status code - 3 digit number notifying us about the result of our request.
+			Reason phrase - (status text), human-readable text that summarizes the emaning of the status code.
+		Http Headers:
+			Same as Http request
+		Http Body:
+			Same as Http request
+
+	HTTP method:
+		GET - Retrieve a resource (DEFAULT http method for your browser, can be bookmarked)
+		POST - Create a resource (cannot be bookmarked)
+		PUT - Update an existing resource (replace the entire object with a new object)
+		DELETE - Delete an existing resource
+		PATCH - Path is a partial update (overwrite ONLY the field it needs to)
+		OPTIONS - REturns available functionalities (operations the server can take)
+		HEAD - Similar to a GET, except it does not return a body
+		TRACE -...
+		CONNECT -...
+
+	Safe method?
+		Does not change the state of your application 
+
+	Idempotent method?
+		An idempotent method will have the same outcome, regardless of how many times it is performed.
+
+			Idempotent 		Safe
+	GET		yes			yes
+	POST		no			no
+	PUT		yes			no
+	DELETE		yes			no
+	PATCH		no			no
+	OPTION		yes			yes
+	HEAD		yes			yes
+		
+Day 2:
+
+	SOAP concepts
+		SOAP: Simple Object Access Protocol 
+			Only allows XML data format (It is contract based), 
+			Allows any protocol HTTP, SMTP, FTP (Simple Mail, File, Transfer Protocol - if using HTTP, only use POST method).
+			Is contractual, there is a contract that SOAP follws called the WSDL (Web Service Definition Language (WSDL)
+				WSDL describew how you're supposed to interact with the SOAP web service.
+
+			SOAP Message:
+				<envelope> //ROOT tag
+					<header>  //metadata, optional, can enable extra security 
+					<body> //the content
+						<fault> //errors and exceptions. optional
+				</envelope>
+
+			SOAP WSDL 
+		
+				<definitions>
+					<types> //datatupes used in the SOAP service 
+					<message> //parameters and return types expected during messaging
+					<porttype> //available operations that can be taken
+						<operations> //A specific supported action
+					<binding> //protocol and encoding
+						  //protocol is http/https/ftp/smtp/etc
+						  //encoding types: DOCUMENT/literal, DOCUMENT/encoded, RPC/literal, RPC/encoded
+					<service> //URL location of the service 
+						<port> //Individual URI to each functionality 	
+				</definitions>	
+			Pros: 
+				SOAP has better security 
+
+
+	Deploying Java XML Web Services on Tomcat
+		Create Project
+		Specify JAX-WS Runtime Dependency 
+		Create a Java XML Web Service 
+		Configure Web Services Endpoints 
+		Configure JAX-WS Listener & Servlet 
+
+	SOAP Service:
+		Exampe Hello World Service:
+			
+			@WebService
+			@SOAPBinding(style = Style.RPC)
+			public class HelloWorld {
+	
+				@WebMethod
+				public String helloWorld(String name) {
+					return "Hello World!";
+				}
+	
+			}
+
+		Inside WEB-INF create the file "sun-jaxws.xml":
+			<?xml version="1.0" encoding="UTF-8"?>
+
+			<endpoints xmlns = "http://java.sun.com/xml/ns/jax-ws/ri/runtime" version = "2.0">
+				<endpoint
+					name = "HelloService"
+					implementation = "com.example.webservice.HelloWorld"
+					url-pattern = "/ws/hello"/>
+			</endpoints>
+
+		Dependencies (pom.xml):
+
+			<properties>
+  				<maven.compiler.target>1.8</maven.compiler.target>
+  				<maven.compiler.source>1.8</maven.compiler.source>
+  			</properties>
+  
+  			<dependencies>
+  				<!-- https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api -->
+				<dependency>
+				    <groupId>com.sun.xml.ws</groupId>
+				    <artifactId>jaxws-rt</artifactId>
+				    <version>2.3.2</version>
+				</dependency>
+			</dependencies>
+
+		web.xml:
+			 <listener>
+  				<listener-class>
+  					com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+  				</listener-class>
+ 			 </listener>
+  
+  			<servlet>
+  				<servlet-name>JaxWSServlet</servlet-name>
+  				<servlet-class>
+  					com.sun.xml.ws.transport.http.servlet.WSServlet
+  				</servlet-class>
+  				<load-on-startup>1</load-on-startup>
+ 			 </servlet>
+  			<servlet-mapping>
+  				<servlet-name>JaxWSServlet</servlet-name>
+  				<url-pattern>/*</url-pattern>
+ 			 </servlet-mapping>
+			
+ 	SOAP Client:
+		Create a new Client Project
+		Open terminal in src folder 
+		wsimport -keep -p com.example.services http://localhost:8080/SoapTest/ws/hello?wsdl
+
+		Create a MainDriver class, inside main method:
+
+			HelloWorldService service = new HelloWorldService();
+		
+			HelloWorld hello = service.getHelloWorldPort();
+		
+			String response = hello.helloWorld("Hi");
+		
+			System.out.println(response);
+
+			
+
+	Contract first: 
+			Create the contract first, then create the code to be designed around it. 
+	Contract last:
+			Create the service first, then create the contract. 
+
+	JAX-WS, JAXB
+
+	Building SOAP services with APACHE CXF
+
+	REST concepts - resources, constraints
+		REST: Representational State Transfer 
+			Web service that follows SOA, allows for any data formats (JSON, XML, etc.) and uses HTTP as its protocol 
+			Pro:	
+		
+
+		Rest Constraints:
+			1) Uniform Interface - Each entity's API should follow the same pattern, no operations should have more than 1 URL  
+			2) Stateless - Does not store any data about the latest HTTP requests
+			3) Layered System - client cannot tell whether it is connect to the original server or another server
+			4) Client-Server - are seperate entities
+			5) Cacheable - resources must declare themselves as cacheable
+			6) (Optional) Code on demand: Able to send executable code to the original server or another server
+
+		If web service obeys all these principles, then it's RESTful
+		
+		https://restfulapi.net/
+
+	REST content negotiation
+
+	Richardson Maturity Model 
+
+
+
+Marshalling Tools 
+Jackson 
+JSON <--> POJO ]
+		|
+		--REST
+JAX-B		|
+XML <--> POJO  ]
+		|
+		--SOAP
+JAX-WS		|
+WSDL <--> Java ]
+
+	Tools		Exception Handling 	Contract 		Message			Atomicity 			Protocol	Security 
+
+SOAP	JAX-WS		Inbuilt			WSDL			XML		Can make SOAP messages atomic		any		any,allows for 
+	ApacheCXF																	any additional security 
+
+REST	tool-less	external resources	not contract bound 	any		not-atmoic,can be ACID compliant	HTTP/HTTPS	HTTPS	
+						(But WADL as well)
+
+Day 3:
+
+	Containerization
+
+	Container vs Virtual Machine 
+
+	Docker images 
+
+	Docker keywords
+
+	Docker commands 
+
+	Container Registry 
+
+	Docker compose 

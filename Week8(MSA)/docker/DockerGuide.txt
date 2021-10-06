@@ -1,0 +1,26 @@
+Demo for running docker container from dockerhub:
+-For any public directory with docker images the command for running the image is:
+docker run -d profileName/directoryName:tagName
+
+-You can use my public profile where I have a sample springboot application:
+docker run -t -dp 9000:9000 alejandrooro99/project1:13   -this command runs my custom container on your machine's port 9000
+
+Useful docker commands:
+docker images : shows images on your system
+docker start/kill : will start or stop a container
+docker ps : will show all running containers
+docker build : will build an image using docker file 
+docker run : will run a container if not found on system will search dockerhub for it
+-------------------------------------------------------------------------------------------
+Demo for Dockerizing and using docker compose:
+-Dockerfile must be declared with base image and any extra modules you want to add, in our case a .jar file will be copied into
+the file system of the container as well as java installed.
+
+-docker build -t name_of_image .  -this command will build an image with name_of_image as its name
+-docker run -t -d name_of_image will run container(-p flag is optional and used for mapping container ports in use to host ports).
+
+-docker-compose.yaml will contain setup for docker-compose, using build with dockerfiles and mapping ports in the .yaml file for use
+-In our example .yaml file we run two identical springboot apps simultaneously on 2 different ports defined in the .yaml file, with
+docker-compose build command(on the same directory as docker/.yaml files) docker will build the two containers and docker-compose up
+will run them simultaneously and then entering the file system of the containers and starting up the springboot apps will allow you to
+use the applications(can be tested with postman).
